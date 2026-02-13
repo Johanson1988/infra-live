@@ -8,4 +8,4 @@ resources:
 
 images:
   - name: ghcr.io/johanson1988/hello-gitops-app
-    newTag: main
+    newTag: 1.0.0
