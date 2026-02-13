@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-barsa-test-to-delete
+  namespace: default
+spec:
+  selector:
+    app: hello-barsa-test-to-delete
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  type: ClusterIP
