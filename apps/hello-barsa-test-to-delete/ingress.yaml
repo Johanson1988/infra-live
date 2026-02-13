@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: hello-barsa-test-to-delete.
+  - host: hello-barsa-test-to-delete.johannmoreno.dev
     http:
       paths:
       - path: /
@@ -22,5 +22,5 @@ spec:
               number: 80
   tls:
   - hosts:
-    - hello-barsa-test-to-delete.
+    - hello-barsa-test-to-delete.johannmoreno.dev
     secretName: hello-barsa-test-to-delete-tls

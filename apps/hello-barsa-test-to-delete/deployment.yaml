@@ -19,7 +19,7 @@ spec:
       - name: ghcr-secret
       containers:
       - name: hello-barsa-test-to-delete
-        image: ghcr.io//hello-barsa-test-to-delete:main
+        image: ghcr.io/Johanson1988/hello-barsa-test-to-delete:main
         ports:
         - containerPort: 80
         resources:
