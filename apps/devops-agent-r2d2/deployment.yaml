@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-agent-r2d2
+  namespace: default
+  labels:
+    app: devops-agent-r2d2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-agent-r2d2
+  template:
+    metadata:
+      labels:
+        app: devops-agent-r2d2
+    spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+      containers:
+      - name: devops-agent-r2d2
+        image: ghcr.io/johanson1988/devops-agent-r2d2
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+          limits:
+            cpu: 100m
+            memory: 128Mi
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
