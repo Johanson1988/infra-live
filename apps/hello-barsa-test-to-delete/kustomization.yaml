@@ -9,4 +9,4 @@ resources:
 images:
 - name: ghcr.io/johanson1988/hello-barsa-test-to-delete
   newName: ghcr.io/johanson1988/hello-barsa-test-to-delete
-  newTag: sha-ac51c65
+  newTag: sha-f347f1d
