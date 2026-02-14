@@ -3,4 +3,4 @@ kind: Kustomization
 images:
 - name: ghcr.io/Johanson1988/hello-gitops-app
   newName: ghcr.io/Johanson1988/hello-gitops-app
-  newTag: sha-5b38512
+  newTag: sha-536de8b
