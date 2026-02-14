@@ -3,4 +3,4 @@ kind: Kustomization
 images:
 - name: ghcr.io/johanson1988/hello-barsa-test-to-delete
   newName: ghcr.io/johanson1988/hello-barsa-test-to-delete
-  newTag: sha-dae1305
+  newTag: sha-ff09949
