@@ -11,4 +11,5 @@ images:
   newName: ghcr.io/Johanson1988/hello-gitops-app
   newTag: sha-3dfa454
 - name: ghcr.io/johanson1988/hello-gitops-app
-  newTag: 1.1.0
+  newName: ghcr.io/johanson1988/hello-gitops-app
+  newTag: sha-25d4e57
