@@ -15,6 +15,7 @@ spec:
       labels:
         app: devops-agent-r2d2
     spec:
+      serviceAccountName: devops-agent
       imagePullSecrets:
       - name: ghcr-secret
       containers:
