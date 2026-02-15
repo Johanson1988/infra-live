@@ -10,4 +10,4 @@ resources:
 images:
 - name: ghcr.io/johanson1988/devops-agent-r2d2
   newName: ghcr.io/johanson1988/devops-agent-r2d2
-  newTag: sha-c73afd5
+  newTag: sha-3c68f5b
