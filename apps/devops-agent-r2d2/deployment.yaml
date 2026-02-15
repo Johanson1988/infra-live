@@ -20,6 +20,12 @@ spec:
       containers:
       - name: devops-agent-r2d2
         image: ghcr.io/johanson1988/devops-agent-r2d2
+        env:
+          - name: GITHUB_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: github-token
+                key: GITHUB_TOKEN
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
